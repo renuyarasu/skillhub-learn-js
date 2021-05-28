@@ -1,11 +1,11 @@
-// var
-// var a = 50;
-// console.log(a);
+// Use Arrow Function in JavaScript
 
-// let
-// let a = 100;
-// console.log(a);
+// OLD FUNCTION
+function person(age) {
+  return age + 10;
+}
+console.log(person(30));
 
-// const
-const a = 500;
-console.log(a);
+// NEW FUNCTION
+const sum = (a,b) => a+b;
+console.log(sum(10,10));
