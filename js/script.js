@@ -1,11 +1,22 @@
-// Use Arrow Function in JavaScript
-
-// OLD FUNCTION
-function person(age) {
-  return age + 10;
+//ES6: Classes
+class human {
+  constructor() {
+    this.age = 30;
+  }
+  printAge() {
+    console.log(this.age);
+  }
 }
-console.log(person(30));
-
-// NEW FUNCTION
-const sum = (a,b) => a+b;
-console.log(sum(10,10));
+class person extends human {
+  constructor() {
+    super();
+    this.name = "VedaGna";
+    this.age = 50;
+  }
+  printName() {
+    console.log(this.name);
+  }
+}
+const persons = new person();
+persons.printName();
+persons.printAge();
