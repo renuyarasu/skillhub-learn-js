@@ -1,8 +1,17 @@
-// JavaScript: Dynamic object property names
+// JavaScript: for... of Loop
 
-let propery = 'name';
-const obj = {
-  foo :'bar',
-  [propery]: "VedaGna"
+const myArray = [1,2,3,4,5,6,7,8,9,0];
+
+for( let n of myArray){
+  console.log(n);
 }
-console.log(obj); //{foo: "bar", name: "VedaGna"}
+//1
+//2
+//3
+//4
+//5
+//6
+//7
+//8
+//9
+//0
