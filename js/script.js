@@ -1,17 +1,13 @@
-// JavaScript: Spread Operators
-//Spread Operators in Array
-let num1 = [1, 2, 3, 4, 5];
-let num2 = [...num1, 6, 7, 8, 9];
-console.log(num2);
+// JavaScript: Destructuring Assignment
 
-//Spread Operators in Objects
+let num = [10, 20];
+let [a, b] = num;
+console.log(num);
+// (2) [10, 20]
+
 let person = {
   name: "VedaGna",
-  surname: "Yarasu",
-};
-let withAge = {
-  ...person,
   age: 10,
 };
-
-console.log(withAge);
+const { name, age } = person;
+console.log(name, age);
