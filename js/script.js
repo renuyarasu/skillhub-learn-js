@@ -1,19 +1,17 @@
-// ES11 - Chaining Operator 
+// JavaScript: Spread Operators
+//Spread Operators in Array
+let num1 = [1, 2, 3, 4, 5];
+let num2 = [...num1, 6, 7, 8, 9];
+console.log(num2);
 
-const user = {
-  name: 'VedaGna',
-  location:{
-    street:{
-      number: 20,
-      name: 'HMT Hills'
-    }
-  }
+//Spread Operators in Objects
+let person = {
+  name: "VedaGna",
+  surname: "Yarasu",
+};
+let withAge = {
+  ...person,
+  age: 10,
 };
 
-//OLD Way // ES6
-// const streetName = user.location && user.location.street && user.location.street.name;
-// console.log(streetName);  //HMT Hills 
-
-//NEW Way
-const streetName = user?.location?.street?.name;
-console.log(streetName);  //HMT Hills 
+console.log(withAge);
