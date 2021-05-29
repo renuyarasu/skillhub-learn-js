@@ -1,17 +1,19 @@
-// JavaScript: for... of Loop
+// ES11 - Chaining Operator 
 
-const myArray = [1,2,3,4,5,6,7,8,9,0];
+const user = {
+  name: 'VedaGna',
+  location:{
+    street:{
+      number: 20,
+      name: 'HMT Hills'
+    }
+  }
+};
 
-for( let n of myArray){
-  console.log(n);
-}
-//1
-//2
-//3
-//4
-//5
-//6
-//7
-//8
-//9
-//0
+//OLD Way // ES6
+// const streetName = user.location && user.location.street && user.location.street.name;
+// console.log(streetName);  //HMT Hills 
+
+//NEW Way
+const streetName = user?.location?.street?.name;
+console.log(streetName);  //HMT Hills 
