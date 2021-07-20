@@ -1,3 +1,8 @@
-const elements = [1, 2, 3, 4, 5, 6, 9, 8, 7];
-const filtered = elements.filter((element) => element > 5);
-console.log(filtered);
+const red = 200;
+const green = 155;
+const blue = 100;
+const alpha = 0.8;
+
+// const rgba = 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')';
+const rgba = `rgba(${red}, ${green}, ${blue}, ${alpha}); `
+console.log(rgba);
