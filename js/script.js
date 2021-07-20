@@ -1,8 +1,14 @@
-const red = 200;
-const green = 155;
-const blue = 100;
-const alpha = 0.8;
+// ES6: Destructuring 
+console.clear();
 
-// const rgba = 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')';
-const rgba = `rgba(${red}, ${green}, ${blue}, ${alpha}); `
-console.log(rgba);
+const name = 'Veda Ganpika Yarasu';
+const nameArr = name.split(' ');
+
+/* let fname = nameArr[0];
+let mname = nameArr[1];
+let lname = nameArr[2]; */
+
+let [fname, , lname] = nameArr;
+console.log(fname);
+// console.log(mname);
+console.log(lname);
