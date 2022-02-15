@@ -1,9 +1,10 @@
 // Skillhub - Learn JavaScript
 console.clear();
 
-// Sum of all numbers between 1 and 100
+// While loop: Find even numbers
 let result = 0;
-for (let i = 1; i <= 100; i++) {
-    result = result + i;
+
+while (result <= 100) {
+    console.log(result);
+    result = result + 2
 }
-console.log(result); // 5050
