@@ -9,10 +9,10 @@ console.clear();
 
 let myArray = [1, 2, 3, 4, 5];
 
-function oddValues(x) {
-    return x % 2 === 0;
+function greaterThan3(x) {
+    return x > 3;
 }
 
-let result = myArray.filter(oddValues);
+let result = myArray.filter(greaterThan3);
 console.log(result); //[ 1, 3, 5 ]
 
