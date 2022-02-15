@@ -9,9 +9,7 @@ console.clear();
 
 let myArray = [1, 2, 3, 4, 5];
 
+let binary = (x) => x.toString(2);
+let result = myArray.map(binary)
 
-let result = myArray.map(function double(x) {
-    return x * 2;
-})
-
-console.log(result); // [ 2, 4, 6, 8, 10 ]
+console.log(result);['1', '10', '11', '100', '101']
