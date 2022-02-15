@@ -1,22 +1,12 @@
 // Skillhub - Learn JavaScript/ES5
 console.clear();
 
-/* Array features:
-------------------
-isArray()
-map()
-filter()
-forEach()
-every()
-some()
-indexOf()
-lastIndexOf() */
+// Array features: isArray()
 
-/* JSON features:
------------------
-stringify() */
+// The Array.isArray() method determines whether the passed value is an Array.
 
-/* Data features:
------------------
-valueOf() */
+let myArray = [1, 2, 3, 4, 5];
+let result = Array.isArray(myArray);
+console.log(result); //true
+
 
