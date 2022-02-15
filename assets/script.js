@@ -10,7 +10,7 @@ console.clear();
 let myArray = [1, 2, 3, 4, 5];
 
 function oddValues(x) {
-    return x % 2;
+    return x % 2 === 0;
 }
 
 let result = myArray.filter(oddValues);
