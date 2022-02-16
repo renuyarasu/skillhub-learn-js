@@ -14,6 +14,14 @@ const users = [
 ]
 
 // Find Full Name
-let result = users.filter(x => x.age < 30).map((x) => x.firstname);
+// let result = users.filter(x => x.age < 30).map((x) => x.firstname);
+// Use reduce - 01
+let result = users.reduce((acc, cur) => {
+    if (cur.age < 30) {
+        acc = [...acc, cur.firstname];
+    }
+    return acc;
+}, [])
+
 
 console.log(result); 
