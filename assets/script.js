@@ -10,14 +10,18 @@ const users = [
     { firstname: 'VedaGna', lastname: 'Yarasu', age: 5 },
     { firstname: 'Hindu', lastname: 'Sajja', age: 25 },
     { firstname: 'Renu', lastname: 'Yarasu', age: 35 },
-    { firstname: 'Gnapika', lastname: 'Yarasu', age: 7 }
+    { firstname: 'Gnapika', lastname: 'Yarasu', age: 5 }
 ]
 
 // Find Full Name
-let result = users.map(function (x) {
-    x = x.firstname + ' ' + x.lastname;
-    return x
-})
+let result = users.reduce(function (acc, cur) {
+    if (acc[cur.lastname]) {
+        acc[cur.lastname] = ++acc[cur.lastname];
+    } else {
+        acc[cur.lastname] = 1;
+    }
+    return acc;
+}, {})
 
-console.log(result); // [ 'VedaGna Yarasu', 'Hindu Sajja', 'Renu Yarasu', 'Gnapika Yarasu' ]
+console.log(result); // { Yarasu: 3, Sajja: 1 }
 
