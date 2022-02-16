@@ -1,18 +1,26 @@
 // Skillhub - Learn JavaScript/ES5
 console.clear();
 
-// Array features: filter()
+// Array features: Array.prototype.reduce()
 
-// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
-
+// The reduce() method executes a user-supplied “reducer” callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 
 
 let myArray = [1, 2, 3, 4, 5];
 
-function greaterThan3(x) {
-    return x > 3;
+// Regular Function
+/* function findSum(myArray) {
+    let sum = 0;
+    for (let i = 0; i < myArray.length; i++) {
+        sum = sum + myArray[i];
+    }
+    return sum;
 }
+ */
 
-let result = myArray.filter(greaterThan3);
-console.log(result); //[ 1, 3, 5 ]
+let result = myArray.reduce(function (acc, cur) {
+    acc = acc + cur;
+    return acc;
+}, 0)
 
+console.log(result); // 15
