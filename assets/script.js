@@ -5,28 +5,19 @@ console.clear();
 
 // The reduce() method executes a user-supplied “reducer” callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 
+const users = [
 
-let myArray = [1, 2, 3, 4, 5];
+    { firstname: 'VedaGna', lastname: 'Yarasu', age: 5 },
+    { firstname: 'Hindu', lastname: 'Sajja', age: 25 },
+    { firstname: 'Renu', lastname: 'Yarasu', age: 35 },
+    { firstname: 'Gnapika', lastname: 'Yarasu', age: 7 }
+]
 
-// Regular Function
-/* function findMax(myArray) {
-    let max = 0;
-    for (let i = 0; i < myArray.length; i++) {
-        if (myArray[i] > max) {
-            max = myArray[i]
-        }
-    }
-    return max
-}
- */
+// Find Full Name
+let result = users.map(function (x) {
+    x = x.firstname + ' ' + x.lastname;
+    return x
+})
 
-let result = myArray.reduce(function (max, cur) {
-    if (cur > max) {
-        max = cur;
-    }
-    return max;
-}, 0)
+console.log(result); // [ 'VedaGna Yarasu', 'Hindu Sajja', 'Renu Yarasu', 'Gnapika Yarasu' ]
 
-console.log(result); // 15
-
-// console.log(findMax(myArray));
