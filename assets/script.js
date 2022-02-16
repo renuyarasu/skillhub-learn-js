@@ -9,18 +9,24 @@ console.clear();
 let myArray = [1, 2, 3, 4, 5];
 
 // Regular Function
-/* function findSum(myArray) {
-    let sum = 0;
+/* function findMax(myArray) {
+    let max = 0;
     for (let i = 0; i < myArray.length; i++) {
-        sum = sum + myArray[i];
+        if (myArray[i] > max) {
+            max = myArray[i]
+        }
     }
-    return sum;
+    return max
 }
  */
 
-let result = myArray.reduce(function (acc, cur) {
-    acc = acc + cur;
-    return acc;
+let result = myArray.reduce(function (max, cur) {
+    if (cur > max) {
+        max = cur;
+    }
+    return max;
 }, 0)
 
 console.log(result); // 15
+
+// console.log(findMax(myArray));
