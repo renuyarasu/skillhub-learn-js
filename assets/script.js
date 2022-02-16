@@ -14,14 +14,6 @@ const users = [
 ]
 
 // Find Full Name
-let result = users.reduce(function (acc, cur) {
-    if (acc[cur.lastname]) {
-        acc[cur.lastname] = ++acc[cur.lastname];
-    } else {
-        acc[cur.lastname] = 1;
-    }
-    return acc;
-}, {})
+let result = users.filter(x => x.age < 30).map((x) => x.firstname);
 
-console.log(result); // { Yarasu: 3, Sajja: 1 }
-
+console.log(result); 
