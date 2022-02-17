@@ -3,29 +3,17 @@ console.clear();
 // ES6-ES2015
 /* let & const / Arrow functions / Classes / For..of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// Classes
-// Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+// Object
+// The Object class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
 
-/* const dog1 = {
+
+const dog = {
     name: 'Rocky',
-    bark() { console.log('barking loudly'); }
+    age: 5,
+    bark() { console.log('barking loudly'); } // ES6
 }
-const dog2 = {
-    name: 'Jocky',
-    bark() { console.log('barking loudly'); }
-}
+dog.name = 'Jocky';// Jocky
+dog['name'] = 'Jocky'; // Jocky
 
-console.log(dog1.bark());
-console.log(dog2.bark()); */
-
-class Dog {
-    constructor(name) {
-        this.name = name
-    }
-    bark() { console.log('barking loudly'); }
-}
-const dog1 = new Dog('Rocky')
-const dog2 = new Dog('Jocky')
-
-dog1.bark()
-dog2.bark()
+const result = dog.name;
+console.log(result);
