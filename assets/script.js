@@ -3,8 +3,15 @@ console.clear();
 // ES7-ES2016
 /* Exponentiation operator / includes() */
 
-// Exponentiation operator (**) 
-// The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand. It is equivalent to Math.pow, except it also accepts BigInts as operands.
+// Array.prototype.includes()
+// The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
 
-let result = console.log(2 ** 2); // 4
+
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers.includes(5);
+console.log(result);// true
+
+const animals = ['Tiger', 'Elephant', 'Rhinoceros', 'Lion', 'Leopard', 'Bear'];
+const animal = animals.includes('Giraffe')
+console.log(animal);// false
