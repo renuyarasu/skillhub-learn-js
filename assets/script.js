@@ -3,22 +3,13 @@ console.clear();
 // ES6-ES2015
 /* let & const / Arrow functions / Classes / for...of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// Spread parameters
-// Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+// Destructuring assignment
+// The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-let x = [1, 2, 3, 4, 5];
-let y = [6, 7, 8, 9, 10];
-let z = [...x, ...y];
-for (let a of z) {
-    console.log(a);
-}
-/* 1
-2
-3
-4
-5
-6
-7
-8
-9
-10 */
+const user = {
+    name: 'VedaGna',
+    age: 5,
+    gender: 'Male'
+};
+const { name, age, gender } = user;
+console.log(age);
