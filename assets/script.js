@@ -3,11 +3,10 @@ console.clear();
 // ES6-ES2015
 /* let & const / Arrow functions / Classes / for...of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// Default parameters
-// Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+// Rest parameters
+// The rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent variadic functions in JavaScript.
 
-function user(name, age = 20) {
-    console.log(name + ' ' + age);
+function user(name, ...rest) {
+    console.log(name + ' ' + rest);
 }
-
-user('VedaGna') //VedaGna 20
+user('VedaGna', 'Gnapika', 'Hindu', 'Renu') // VedaGna Gnapika,Hindu,Renu
