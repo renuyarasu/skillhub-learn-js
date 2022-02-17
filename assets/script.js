@@ -1,22 +1,13 @@
 // Skillhub - Learn JavaScript/ES5
 console.clear();
 
-// Array features: Array.prototype.forEach()
+// Array features: Array.prototype.every()
 
-// TThe forEach() method executes a provided function once for each array element.
-
-
+// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 
 let myArray = [1, 2, 3, 4, 5];
 
-
-
-let result = myArray.forEach(function (x) {
-    console.log(x);
+let result = myArray.every(function (x) {
+    return x > 0;
 })
-
-/* 1
-2
-3
-4
-5 */
+console.log(result); // true
