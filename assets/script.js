@@ -3,17 +3,11 @@ console.clear();
 // ES6-ES2015
 /* let & const / Arrow functions / Classes / for...of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// for...of
-// The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
+// Default parameters
+// Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
 
-let myArray = [1, 2, 3, 4, 5];
-
-for (let x of myArray) {
-    console.log(x);
+function user(name, age = 20) {
+    console.log(name + ' ' + age);
 }
-/* 
-1
-2
-3
-4
-5 */
+
+user('VedaGna') //VedaGna 20
