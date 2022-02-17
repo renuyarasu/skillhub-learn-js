@@ -10,7 +10,8 @@ console.clear();
 // }
 
 {
-    let num = 10;
+    const num = 10;
+    // num = 20
     console.log(num); // 10
 }
 
