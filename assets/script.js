@@ -1,13 +1,14 @@
-// Skillhub - Learn JavaScript/ES5
+// Skillhub - Learn JavaScript/ES6
 console.clear();
 
-// Array features: Array.prototype.lastIndexOf()
+// The JSON.stringify() method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.
 
-// The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+let data = {
+    "userId": 1,
+    "id": 1,
+    "title": "quidem molestiae enim"
+};
 
+let result = JSON.stringify(data)
 
-let myArray = [1, 2, 3, 4, 5, 1, 1, 1];
-
-let result = myArray.lastIndexOf(1)
-
-console.log(result); // 7
+console.log(result); // {"userId":1,"id":1,"title":"quidem molestiae enim"}
