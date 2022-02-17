@@ -3,12 +3,29 @@ console.clear();
 // ES6-ES2015
 /* let & const / Arrow functions / Classes / For..of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// Arrow functions
+// Classes
+// Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
 
-// Traditional Anonymous Function
-let result = function (x) {
-    return x + 100;
+/* const dog1 = {
+    name: 'Rocky',
+    bark() { console.log('barking loudly'); }
+}
+const dog2 = {
+    name: 'Jocky',
+    bark() { console.log('barking loudly'); }
 }
 
-// Arrow function
-let result = (x) => x + 100;
+console.log(dog1.bark());
+console.log(dog2.bark()); */
+
+class Dog {
+    constructor(name) {
+        this.name = name
+    }
+    bark() { console.log('barking loudly'); }
+}
+const dog1 = new Dog('Rocky')
+const dog2 = new Dog('Jocky')
+
+dog1.bark()
+dog2.bark()
