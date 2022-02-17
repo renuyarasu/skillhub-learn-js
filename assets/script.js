@@ -1,19 +1,19 @@
 // Skillhub - ES6-ES2015
 console.clear();
 // ES6-ES2015
-/* let & const / Arrow functions / Classes / For..of / Default parameters / Rest parameters / Spread parameters / Destructuring */
+/* let & const / Arrow functions / Classes / for...of / Default parameters / Rest parameters / Spread parameters / Destructuring */
 
-// Object
-// The Object class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+// for...of
+// The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
 
+let myArray = [1, 2, 3, 4, 5];
 
-const dog = {
-    name: 'Rocky',
-    age: 5,
-    bark() { console.log('barking loudly'); } // ES6
+for (let x of myArray) {
+    console.log(x);
 }
-dog.name = 'Jocky';// Jocky
-dog['name'] = 'Jocky'; // Jocky
-
-const result = dog.name;
-console.log(result);
+/* 
+1
+2
+3
+4
+5 */
