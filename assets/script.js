@@ -9,11 +9,15 @@ Object.values()
 Sync/Wait
 */
 
-// String.prototype.padStart()
-// The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
+// Object.entries()
+/* The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs. This is the same as iterating with a for...in loop, except that a for...in loop enumerates properties in the prototype chain as well.
 
-const myString = 'VedaGna';
-const result = myString.padStart(100, '*') + myString.padEnd(10, '*');
-console.log(result);
+The order of the array returned by Object.entries() is the same as that provided by a for...in loop. If there is a need for different ordering, then the array should be sorted first, like Object.entries(obj).sort((a, b) => b[0].localeCompare(a[0]));. */
 
-
+let person = {
+    name: 'VedaGna',
+    age: 5,
+    gender: 'Male'
+}
+let result = Object.entries(person);
+console.log(result); // [ [ 'name', 'VedaGna' ], [ 'age', 5 ], [ 'gender', 'Male' ] ]
