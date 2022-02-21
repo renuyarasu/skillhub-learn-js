@@ -1,22 +1,19 @@
-// Skillhub - ES8-ES2017
+// Asynchronous JavaScript Course (Async/Await, Promises, Callbacks)
+// https://www.youtube.com/watch?v=ZYb_ZU8LNxs
 console.clear();
 
-/* 
-padStart()
-padEnd()
-Object.entries()
-Object.values()
-Sync/Wait
-*/
+// Synchronous 
+console.log("0001");
+console.log("0002");
+console.log("0003");
+console.log("0004");
+console.log("0005");
 
-// Object.values()
-// The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop. (The only difference is that a for...in loop enumerates properties in the prototype chain as well.)
+/* 0001
+0002
+0004
+0003
+0005 */
 
 
-let person = {
-    name: 'VedaGna',
-    age: 5,
-    gender: 'Male'
-}
-let result = Object.values(person);
-console.log(result); // [ 'VedaGna', 5, 'Male' ]
+
