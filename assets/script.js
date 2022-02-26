@@ -47,7 +47,7 @@ let stocks = {
     toppings: ['Chocolate', 'Peanuts']
 }
 
-let is_shop_open = true;
+let is_shop_open = false;
 
 let order = (time, work) => {
     return new Promise((resolve, reject) => {
@@ -84,4 +84,8 @@ order(2000, () => console.log(`${stocks.fruits[0]}`))
     })
     .then(() => {
         return order(2000, () => console.log('Serve ICE-CREAM'))
+    })
+
+    .catch(() => {
+        console.log('Customer Left!');
     })
