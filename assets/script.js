@@ -89,3 +89,6 @@ order(2000, () => console.log(`${stocks.fruits[0]}`))
     .catch(() => {
         console.log('Customer Left!');
     })
+    .finally(() => {
+        console.log('Day ended, Shop is Closed!');
+    })
