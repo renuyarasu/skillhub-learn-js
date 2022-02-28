@@ -49,46 +49,36 @@ let stocks = {
 
 let is_shop_open = true;
 
-let order = (time, work) => {
+/* let order = () => {
     return new Promise((resolve, reject) => {
-        if (is_shop_open) {
-            setTimeout(() => {
-                resolve(work());
-            }, time);
-
-        }
-        else {
-            reject(console.log('Our Shop is Closed!'));
+        if () {
+            resolve()
+        } else {
+            reject()
         }
     })
 }
 
-order(2000, () => console.log(`${stocks.fruits[0]}`))
-    .then(() => {
-        return order(0000, () => console.log('Producion has started!'))
-    })
-    .then(() => {
-        return order(2000, () => console.log('The fruit has been chopped!'))
-    })
-    .then(() => {
-        return order(1000, () => console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`))
-    })
-    .then(() => {
-        return order(1000, () => console.log('The machine was started!'))
-    })
-    .then(() => {
-        return order(2000, () => console.log(`Ice cream was placed on ${stocks.holder[0]}`))
-    })
-    .then(() => {
-        return order(3000, () => console.log(`${stocks.toppings[0]} was added ad toppings!`))
-    })
-    .then(() => {
-        return order(2000, () => console.log('Serve ICE-CREAM'))
-    })
+order()
+.then()
+.then()
+.then()
+.catch()
+.finally() */
 
-    .catch(() => {
-        console.log('Customer Left!');
-    })
-    .finally(() => {
-        console.log('Day ended, Shop is Closed!');
+async function order() {
+    try {
+        await abc;
+    }
+    catch (error) {
+        console.log("ABC doen't exists");
+    }
+    finally {
+        console.log('Anyway run code');
+    }
+}
+order()
+    .then(() => {
+        console.log('Producion has started!')
+
     })
