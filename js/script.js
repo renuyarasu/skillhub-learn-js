@@ -9,8 +9,9 @@ console.clear();
 
 */
 
-// Function.prototype.toString() 
+// String.prototype.trimStart()
+// The trimStart() method removes whitespace from the beginning of a string. trimLeft() is an alias of this method. 
 
-let FunctionToString = () => 'Hello World'
-let results = FunctionToString.toString();
-console.log(results); // () => 'Hello World'
+let trimStart = ' VedaGna '
+let results = trimStart.trimStart();
+console.log(results); //  VedaGna
