@@ -45,7 +45,7 @@ let stocks = {
     toppings: ['Chocolate', 'Peanuts']
 }
 
-let is_shop_open = true;
+let is_shop_open = false;
 
 function time(ms) {
     return new Promise((resolve, reject) => {
