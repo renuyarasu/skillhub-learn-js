@@ -9,9 +9,10 @@ console.clear();
 
 */
 
-// String.prototype.trimStart()
-// The trimStart() method removes whitespace from the beginning of a string. trimLeft() is an alias of this method. 
+// Object.fromEntries()
+// The Object.fromEntries() method transforms a list of key-value pairs into an object.
 
-let trimStart = ' VedaGna '
-let results = trimStart.trimEnd();
-console.log(results); //  VedaGna
+
+let person = [['name', 'VedaGna'], ['age', 5]]
+let results = Object.fromEntries(person);
+console.log(results); //  { name: 'VedaGna', age: 5 }
