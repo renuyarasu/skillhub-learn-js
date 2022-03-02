@@ -47,24 +47,48 @@ let stocks = {
 
 let is_shop_open = true;
 
-// Await
-
-let topping_choice = () => {
+function time(ms) {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(console.log('Which topping would you like?'));
-        }, 3000);
+        if (is_shop_open) {
+            setTimeout(resolve, ms);
+        } else {
+            reject(console.log('Shop is Closed!'));
+        }
     })
 }
+
 async function kitchen() {
-    console.log('A');
-    console.log('B');
-    console.log('C');
-    await topping_choice()
-    console.log('D');
-    console.log('E');
+    try {
+        await time(2000);
+        console.log(`${stocks.fruits[0]}`);
+
+        await time(1000);
+        console.log('Producion has started!');
+
+        await time(2000);
+        console.log('The fruit has been chopped!');
+
+        await time(1000);
+        console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+
+        await time(1000);
+        console.log('The machine was started!');
+
+        await time(2000);
+        console.log(`Ice cream was placed on ${stocks.holder[0]}`);
+
+        await time(3000);
+        console.log(`${stocks.toppings[0]} was added ad toppings!`);
+
+        await time(2000);
+        console.log('Serve ICE-CREAM');
+
+    }
+    catch (error) {
+        console.log('Customer Left!', error);
+    }
+    finally {
+        console.log('Day ended, Shop is Closed!');
+    }
 }
 kitchen()
-console.log('Vessels Cleaning');
-console.log('Table Cleaning');
-console.log('Taking Other Order');
