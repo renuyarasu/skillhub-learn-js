@@ -6,7 +6,6 @@ console.clear();
   (Arguments can be transformations to a function)
 */
 
-let para = 'Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments or elements are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected'
-
-let result = para.match(/[a-z]/g);
+let numbers = [1, 2, 3, 4, 5, 6, 8, 7, 9];
+let result = Math.max(...numbers)
 console.log(result);
