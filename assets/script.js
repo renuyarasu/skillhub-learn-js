@@ -1,3 +1,5 @@
+
+
 // Asynchronous JavaScript Course (Async/Await, Promises, Callbacks)
 // https://www.youtube.com/watch?v=ZYb_ZU8LNxs
 console.clear();
@@ -17,7 +19,6 @@ Start Producion
 Serve
 */
 
-
 /* TIME (seconds)
 #1: Place Order →	        2
 #2: Cut the Fruit →         2
@@ -31,14 +32,11 @@ Serve
 // Promises
 /* 
 We need to understand 4 things first:
-
 01. Relationship BTW Time and Work
 02. Promise Chaining 
 03. Error Handling
 04. The .finally handler
-
 */
-
 
 let stocks = {
     fruits: ['Strawberry', 'Apple', 'Watermelon', 'Orange', 'Pear', 'Cherry', 'Nectarine', 'Grape'],
@@ -49,36 +47,24 @@ let stocks = {
 
 let is_shop_open = true;
 
-/* let order = () => {
+// Await
+
+let topping_choice = () => {
     return new Promise((resolve, reject) => {
-        if () {
-            resolve()
-        } else {
-            reject()
-        }
+        setTimeout(() => {
+            resolve(console.log('Which topping would you like?'));
+        }, 3000);
     })
 }
-
-order()
-.then()
-.then()
-.then()
-.catch()
-.finally() */
-
-async function order() {
-    try {
-        await abc;
-    }
-    catch (error) {
-        console.log("ABC doen't exists");
-    }
-    finally {
-        console.log('Anyway run code');
-    }
+async function kitchen() {
+    console.log('A');
+    console.log('B');
+    console.log('C');
+    await topping_choice()
+    console.log('D');
+    console.log('E');
 }
-order()
-    .then(() => {
-        console.log('Producion has started!')
-
-    })
+kitchen()
+console.log('Vessels Cleaning');
+console.log('Table Cleaning');
+console.log('Taking Other Order');
