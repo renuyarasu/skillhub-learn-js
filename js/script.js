@@ -1,9 +1,9 @@
-const myarr = [1, 2, 3, 4, 5];
-const newarr = [];
-
-const doubleValues = item => item * 10;
-
-for (let i = 0; i < myarr.length; i++) {
-    newarr.push(doubleValues(myarr[i]));
-}
-console.log(newarr);
+// Skillhub - ES11-ES2020
+console.clear();
+/* 
+• BigInt (Number.MAX_SAFE_INTEGER)
+  2**53-1=9007199254740991
+• Dynamic Impact
+• Nullish operator
+• Optional chaining 
+*/
