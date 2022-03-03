@@ -41,3 +41,10 @@ class Mobile {
     this.name = newName;
   }
 }
+
+// #Creating/Instantiating objects by using class
+
+let redme = new Mobile('Redmi Note 7', 'Silver');
+let apple = new Mobile('Apple S 7', 'Black')
+
+
