@@ -1,9 +1,15 @@
-const myarr = [1, 2, 3, 4, 5];
-const newarr = [];
+// Skillhub - OOPs
+console.clear();
+/* 
+• OOPs Intro
+• Objects
+• Classes
+• Encapsulation
+• Abstraction
+• Reusability/inheritance
+• Polymorphism
+• Association
+• Aggregation
+• Composition
+*/
 
-const doubleValues = item => item * 10;
-
-for (let i = 0; i < myarr.length; i++) {
-    newarr.push(doubleValues(myarr[i]));
-}
-console.log(newarr);
