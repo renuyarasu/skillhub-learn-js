@@ -8,13 +8,10 @@ console.clear();
 • Optional chaining 
 */
 
-// 01
-import('module.js').then((module) => {
-    //..........
-})
+// Nullish operator
+// The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
 
 
-// 02
-async () => {
-    const module = await import('module.js')
-}
+let x = null;
+let results = x ?? 'VedaGna'
+console.log(results); //  { name: 'VedaGna', age: 5 }
