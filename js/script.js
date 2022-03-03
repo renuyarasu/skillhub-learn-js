@@ -24,10 +24,10 @@ console.clear();
     04. Using Classes
 */
 
-// Functions are Objects in JavaScript 
+// Using Classes
 
-function Person() {
-  return 'person';
+class Person{
+  
 }
 let person = new Person();
 // person.username = 'VedaGna';
