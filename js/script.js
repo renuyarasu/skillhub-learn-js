@@ -24,10 +24,14 @@ console.clear();
     04. Using Classes
 */
 
-// Object.create()
+// Functions are Objects in JavaScript 
 
-let name = Object.create({});
-name.username = 'VedaGna';
+function Person() {
+  return 'person';
+}
+let person = new Person();
+person.username = 'VedaGna';
+// person['username'] = 'VedaGna';
 
-console.log(name); //{ username: 'VedaGna' }
-console.log(typeof name); // object
+console.log(person); //{ username: 'VedaGna' }
+console.log(typeof person); // object
