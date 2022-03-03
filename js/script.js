@@ -8,10 +8,13 @@ console.clear();
 • Optional chaining 
 */
 
-// Nullish operator
-// The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+// Optional chaining 
+// Optional chaining is a safe way to access nested object properties, even if the property doesn't exist.
 
-
-let x = null;
-let results = x ?? 'VedaGna'
-console.log(results); //  { name: 'VedaGna', age: 5 }
+let pet = {
+  cat: {
+    name: 'Meow'
+  }
+};
+let results = pet.dog?.name
+console.log(results); // undefined
