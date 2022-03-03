@@ -30,8 +30,8 @@ function Person() {
   return 'person';
 }
 let person = new Person();
-person.username = 'VedaGna';
-// person['username'] = 'VedaGna';
+// person.username = 'VedaGna';
+person['username'] = 'VedaGna';
 
 console.log(person); //{ username: 'VedaGna' }
 console.log(typeof person); // object
