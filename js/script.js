@@ -8,16 +8,15 @@ console.clear();
 
 
 // Logical Assignment Operators (&&=, ||=)
-// Logical AND assignment (&&=)
-// The logical AND assignment (x &&= y) operator only assigns if x is truthy.
+// Logical AND assignment (||=)
+// The logical OR assignment (x ||= y) operator only assigns if x is falsy.
 
-let a = 1;
-let b = 0;
+const a = { duration: 50, title: '' };
 
-a &&= 2;
-console.log(a);
-// expected output: 2
+a.duration ||= 10;
+console.log(a.duration);
+// expected output: 50
 
-b &&= 2;
-console.log(b);
-// expected output: 0
+a.title ||= 'title is empty.';
+console.log(a.title);
+// expected output: "title is empty"
