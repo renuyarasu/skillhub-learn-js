@@ -24,14 +24,20 @@ console.clear();
     04. Using Classes
 */
 
-// Using Classes
+// Classes
 
-class Person{
-  
+class Mobile {
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
+  calling() {
+    console.log('Calling to Chinnu!');
+  }
+  play() {
+    console.log('Playing video games in mobile!');
+  }
+  setName(newName) {
+    this.name = newName;
+  }
 }
-let person = new Person();
-// person.username = 'VedaGna';
-person['username'] = 'VedaGna';
-
-console.log(person); //{ username: 'VedaGna' }
-console.log(typeof person); // object
