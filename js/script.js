@@ -7,9 +7,17 @@ console.clear();
 */
 
 
-// Numeric separators
-// Numeric Separators give us the ability to separate thousands with an underscore (_) in numeric literals.
+// Logical Assignment Operators (&&=, ||=)
+// Logical AND assignment (&&=)
+// The logical AND assignment (x &&= y) operator only assigns if x is truthy.
 
+let a = 1;
+let b = 0;
 
-let budget = 1_000_000_000_000;
-console.log(budget);// 1000000000000
+a &&= 2;
+console.log(a);
+// expected output: 2
+
+b &&= 2;
+console.log(b);
+// expected output: 0
