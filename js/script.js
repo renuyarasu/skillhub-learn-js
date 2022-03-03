@@ -24,9 +24,10 @@ console.clear();
     04. Using Classes
 */
 
-// Object Literal
+// Object.create()
 
-let name = { username: 'VedaGna' };
+let name = Object.create({});
+name.username = 'VedaGna';
 
 console.log(name); //{ username: 'VedaGna' }
 console.log(typeof name); // object
