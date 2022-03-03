@@ -48,3 +48,10 @@ let redme = new Mobile('Redmi Note 7', 'Silver');
 let apple = new Mobile('Apple S 7', 'Black')
 
 
+// Getting/Setting the properties and actions with created
+
+console.log(redme.name); //Redmi Note 7
+redme.calling();// Calling to Chinnu!
+
+apple.setName('Apple X'); 
+console.log(apple.name); //Apple X
