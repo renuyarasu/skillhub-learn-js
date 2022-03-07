@@ -31,32 +31,34 @@ console.clear();
 // 01. Creating Encapsulation class
 class Bank {
   constructor(name, account_no, account_type) {
-    this.name = name;
-    this.account_no = account_no;
-    this.account_type = account_type;
+    var name = name;
+    var account_no = account_no;
+    var account_type = account_type;
+
+
+    // Getter
+    this.getName = () => {
+      return name;
+    }
+    this.getAccountNo = () => {
+      return account_no;
+    }
+    this.getAccountType = () => {
+      return account_type;
+    }
+
+    // Setter
+    this.setName = (newName) => {
+      name = newName;
+    }
+    this.setAccountNumber = () => {
+      account_no = Math.floor(Math.random() * 9000000000);
+    }
+    this.setAccountType = (accountType) => {
+      account_type = accountType;
+    }
   }
 
-  // Getter
-  getName() {
-    return this.name;
-  }
-  getAccountNo() {
-    return this.account_no;
-  }
-  getAccountType() {
-    return this.account_type;
-  }
-
-  // Setter
-  setName(newName) {
-    this.name = newName;
-  }
-  setAccountNumber() {
-    this.account_no = Math.floor(Math.random() * 9000000000);
-  }
-  setAccountType(accountType) {
-    this.account_type = accountType;
-  }
 
 }
 // 02. Creating/Installing objects by using calss
@@ -64,13 +66,12 @@ let veda = new Bank('VedaGna', null, 'Saving');
 let hindu = new Bank('Hindu', null, 'Current');
 
 // 03. Getting/Setting the properties and actions with created object.
-
-/* console.log(veda.getName());
+console.log(veda.getName());
+veda.setAccountNumber();
 console.log(veda.getAccountNo());
 
 console.log(hindu.getName());
-console.log(hindu.getAccountNo()); */
-
-console.log(hindu.name);
-veda.setAccountNumber(000)
-console.log(veda.getAccountNo());
+hindu.setAccountNumber();
+console.log(hindu.getAccountNo());
+hindu.account_no = 1254;
+console.log(hindu.getAccountNo());
