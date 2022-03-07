@@ -1,1 +1,1 @@
-mname
+console.log(veda.getAccountNo());

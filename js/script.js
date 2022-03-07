@@ -24,34 +24,53 @@ console.clear();
     04. Using Classes
 */
 
-// Classes
+/*  Encapsulation/ Data Hiding
+    Encapsulation is the packing of data and functions into one component (for example, a class) and then controlling access to that component to make a "blackbox" out of the object.
+ */
 
-class Mobile {
-  constructor(name, color) {
+// 01. Creating Encapsulation class
+class Bank {
+  constructor(name, account_no, account_type) {
     this.name = name;
-    this.color = color;
+    this.account_no = account_no;
+    this.account_type = account_type;
   }
-  calling() {
-    console.log('Calling to Chinnu!');
+
+  // Getter
+  getName() {
+    return this.name;
   }
-  play() {
-    console.log('Playing video games in mobile!');
+  getAccountNo() {
+    return this.account_no;
   }
+  getAccountType() {
+    return this.account_type;
+  }
+
+  // Setter
   setName(newName) {
     this.name = newName;
   }
+  setAccountNumber() {
+    this.account_no = Math.floor(Math.random() * 9000000000);
+  }
+  setAccountType(accountType) {
+    this.account_type = accountType;
+  }
+
 }
+// 02. Creating/Installing objects by using calss
+let veda = new Bank('VedaGna', null, 'Saving');
+let hindu = new Bank('Hindu', null, 'Current');
 
-// #Creating/Instantiating objects by using class
+// 03. Getting/Setting the properties and actions with created object.
 
-let redme = new Mobile('Redmi Note 7', 'Silver');
-let apple = new Mobile('Apple S 7', 'Black')
+/* console.log(veda.getName());
+console.log(veda.getAccountNo());
 
+console.log(hindu.getName());
+console.log(hindu.getAccountNo()); */
 
-// Getting/Setting the properties and actions with created
-
-console.log(redme.name); //Redmi Note 7
-redme.calling();// Calling to Chinnu!
-
-apple.setName('Apple X'); 
-console.log(apple.name); //Apple X
+console.log(hindu.name);
+veda.setAccountNumber(000)
+console.log(veda.getAccountNo());
