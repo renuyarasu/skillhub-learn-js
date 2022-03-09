@@ -24,54 +24,28 @@ console.clear();
     04. Using Classes
 */
 
-/*  Encapsulation/ Data Hiding
-    Encapsulation is the packing of data and functions into one component (for example, a class) and then controlling access to that component to make a "blackbox" out of the object.
+/*  Abstraction
+    Abstraction in computer programming is a way to reduce complexity and allow efficient design and implementation in complex software systems. It hides the technical complexity of systems behind simpler APIs.
  */
-
-// 01. Creating Encapsulation class
-class Bank {
-  constructor(name, account_no, account_type) {
-    var name = name;
-    var account_no = account_no;
-    var account_type = account_type;
-
-
-    // Getter
-    this.getName = () => {
-      return name;
+// Creating Abstract Class
+class Mobile {
+    constructor(name, color, initialChargeing) {
+        this.name = name;
+        this.color = color;
+        this.initialChargeing = initialChargeing;
+        this.currentChargeing = 0;
+        this.plugInCharge = (charge) => {
+            this.currentChargeing = this.initialChargeing + charge;
+        }
     }
-    this.getAccountNo = () => {
-      return account_no;
-    }
-    this.getAccountType = () => {
-      return account_type;
-    }
-
-    // Setter
-    this.setName = (newName) => {
-      name = newName;
-    }
-    this.setAccountNumber = () => {
-      account_no = Math.floor(Math.random() * 9000000000);
-    }
-    this.setAccountType = (accountType) => {
-      account_type = accountType;
-    }
-  }
-
-
 }
-// 02. Creating/Installing objects by using calss
-let veda = new Bank('VedaGna', null, 'Saving');
-let hindu = new Bank('Hindu', null, 'Current');
 
-// 03. Getting/Setting the properties and actions with created object.
-console.log(veda.getName());
-veda.setAccountNumber();
-console.log(veda.getAccountNo());
+// Creating/Installing objects by using class
+let redmi = new Mobile('Redmi Note 7', 'Black', 20);
+let apple = new Mobile('Apple', 'Black', 20);
 
-console.log(hindu.getName());
-hindu.setAccountNumber();
-console.log(hindu.getAccountNo());
-hindu.account_no = 1254;
-console.log(hindu.getAccountNo());
+// Getting/Setting the properties and actions with created object.
+redmi.plugInCharge(30);
+console.log(redmi.currentChargeing);
+
+
