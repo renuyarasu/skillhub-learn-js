@@ -29,13 +29,20 @@ console.clear();
  */
 // Creating Abstract Class
 class Mobile {
-    constructor(name, color, initialChargeing) {
+    constructor(name, color, initialCharging) {
         this.name = name;
         this.color = color;
-        this.initialChargeing = initialChargeing;
-        this.currentChargeing = 0;
+        this.initialCharging = initialCharging;
+        var currentCharging = 0;
+        var chargingDetails = (charge) => {
+            currentCharging = this.initialCharging + charge;
+            if (currentCharging > 100) {
+                throw Error('Mobile is fully charged!');
+            }
+            console.log('Current Charging: ' + currentCharging);
+        }
         this.plugInCharge = (charge) => {
-            this.currentChargeing = this.initialChargeing + charge;
+            chargingDetails(charge);
         }
     }
 }
@@ -45,7 +52,8 @@ let redmi = new Mobile('Redmi Note 7', 'Black', 20);
 let apple = new Mobile('Apple', 'Black', 20);
 
 // Getting/Setting the properties and actions with created object.
-redmi.plugInCharge(30);
-console.log(redmi.currentChargeing);
+// redmi.plugInCharge(30);
+// console.log(redmi.currentCharging);
+console.log(redmi.plugInCharge(200));
 
 

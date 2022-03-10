@@ -1,1 +1,1 @@
-console.log(veda.getAccountNo());
+initialCharging
