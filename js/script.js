@@ -45,7 +45,12 @@ class Person {
 }
 
 // Extending Parent Class to Child Class
-
+class Developer extends Person {
+    constructor(name, designation, company) {
+        super(name, designation);
+        this.company = company;
+    }
+}
 
 // Extending Parent Class to one more Child Class
 
@@ -56,7 +61,9 @@ class Person {
 
 // Getting/Setting the properties and actions with created object.
 let person = new Person('Human', 'Nothing');
-console.log(person);
+// console.log(person);
+let renu = new Developer('Renu', 'UI', 'innCompany');
+console.log(renu);
 
 
 
