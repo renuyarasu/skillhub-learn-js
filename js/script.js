@@ -56,18 +56,27 @@ class Developer extends Person {
 }
 
 // Extending Parent Class to one more Child Class
-
+class Dancer extends Person {
+    constructor(name, designation, school) {
+        super(name, designation);
+        this.school = school;
+    }
+    coding() {
+        console.log('JavaScript Coding!');
+    }
+}
 
 // Creating/Installing objects by using class
 
 
 
 // Getting/Setting the properties and actions with created object.
-let person = new Person('Human', 'Nothing');
-// console.log(person);
+/* let person = new Person('Human', 'Nothing');
+console.log(person);
 let renu = new Developer('Renu', 'UI', 'innCompany');
 console.log(renu);
-console.log(renu.coding());
+console.log(renu.coding()); */
 
-
+let hindu = new Dancer('Hindu', 'Dancer', 'Dancing School');
+console.log(hindu);
 
