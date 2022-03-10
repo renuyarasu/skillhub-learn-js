@@ -28,7 +28,7 @@ console.clear();
 // Inheritance is a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
 
 // Creating Parent Class
-class Person {
+/* class Person {
     constructor(name, designation) {
         this.name = name;
         this.designation = designation;
@@ -88,4 +88,26 @@ console.log(hindu);
 // person.learning();
 renu.learning();
 hindu.learning();
+*/
+
+
+// Function Overloading in JavaScript
+
+function myFun() {
+    return 10;
+}
+function myFun(name) {
+    return name;
+}
+
+function myFun(name, company) {
+    return name + ' ' + company;
+}
+
+// let result = myFun()// undefined undefined
+let result = myFun('Renu', 'innCompany')// Renu innCompany
+console.log(result);
+
+
+
 
