@@ -57,3 +57,13 @@ let apple = new Mobile('Apple', 'Black', 20);
 console.log(redmi.plugInCharge(200));
 
 
+// Abstraction Interview Q/A
+
+/* 01. What exactly Abstraction means? 
+► Abstraction is the method of hiding the unwanted information. 
+02. What is the difference between Encapsulation and Abstraction? 
+► Abstraction is the method of hiding the unwanted information. Where as encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. */
+
+
+
+
