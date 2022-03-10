@@ -108,6 +108,18 @@ function myFun(name, company) {
 let result = myFun('Renu', 'innCompany')// Renu innCompany
 console.log(result);
 
+/* 
+01. Can you give an example for polymorphism in React? 
+Any react component should have render() method, which will be overridden.
+
+02. Is setState() method inherited from React.Component class?
+Yes.
+
+03. JavaScript has method overloading functionality, Yes or No and Why? 
+No, It has only overriding functionality. 
+In a language like java, for instance, the compiler will check the number and types of parameters passed to a function and match it with the function signature. 
+In JavaScript however, type checking of parameters doesn't happen at compile time. In fact, the parameters won't be type checked even at run time unless they are actually used, and even then the mention to hecking is extremely relaxed.
+ */
 
 
 
