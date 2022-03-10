@@ -50,6 +50,9 @@ class Developer extends Person {
         super(name, designation);
         this.company = company;
     }
+    coding() {
+        console.log('JavaScript Coding!');
+    }
 }
 
 // Extending Parent Class to one more Child Class
@@ -64,6 +67,7 @@ let person = new Person('Human', 'Nothing');
 // console.log(person);
 let renu = new Developer('Renu', 'UI', 'innCompany');
 console.log(renu);
+console.log(renu.coding());
 
 
 
