@@ -24,7 +24,7 @@ console.clear();
     04. Using Classes
 */
 
-// Inheritance
+// Polymorphism (Method Overriding)
 // Inheritance is a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
 
 // Creating Parent Class
@@ -53,6 +53,10 @@ class Developer extends Person {
     coding() {
         console.log('JavaScript Coding!');
     }
+    learning() {
+        console.log('Learning JavaScript!');
+    }
+
 }
 
 // Extending Parent Class to one more Child Class
@@ -64,26 +68,24 @@ class Dancer extends Person {
     coding() {
         console.log('JavaScript Coding!');
     }
+    learning() {
+        console.log('Learning Bharatha Natyam!');
+    }
 }
 
 // Creating/Installing objects by using class
-
-
-
-// Getting/Setting the properties and actions with created object.
-/* let person = new Person('Human', 'Nothing');
+let person = new Person('Anji', 'Socialist', 'Home');
 console.log(person);
-let renu = new Developer('Renu', 'UI', 'innCompany');
-console.log(renu);
-console.log(renu.coding()); */
 
-let hindu = new Dancer('Hindu', 'Dancer', 'Dancing School');
+let renu = new Developer('Renuka', 'UI', 'innCompany');
+console.log(renu);
+
+let hindu = new Dancer('Hindu', 'Dancer', 'Dance School');
 console.log(hindu);
 
 
-
-/* 01. Can you give an example for inheritance in React? 
-A. Any components which extends React.Component class to create class components is one of the great example for inheritance.
-02. Can we extend more than once class? 
-A. No, in JavaScript, a class cannot extend from multiple classes, which is also known as "multiple inheritance". */
+// Getting/Setting the properties and actions with created object.
+// person.learning();
+renu.learning();
+hindu.learning();
 
