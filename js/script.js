@@ -24,7 +24,7 @@ console.clear();
     04. Using Classes
 */
 
-// inheritance
+// Inheritance
 // Inheritance is a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
 
 // Creating Parent Class
@@ -79,4 +79,11 @@ console.log(renu.coding()); */
 
 let hindu = new Dancer('Hindu', 'Dancer', 'Dancing School');
 console.log(hindu);
+
+
+
+/* 01. Can you give an example for inheritance in React? 
+A. Any components which extends React.Component class to create class components is one of the great example for inheritance.
+02. Can we extend more than once class? 
+A. No, in JavaScript, a class cannot extend from multiple classes, which is also known as "multiple inheritance". */
 
