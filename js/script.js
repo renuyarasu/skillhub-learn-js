@@ -13,113 +13,12 @@ console.clear();
 • Composition
 */
 
-// OOP = OOP (Object-Oriented Programming) is an approach in programming in which data is encapsulated within objects and the object itself is operated on, rather than its component parts.
-// JavaScript is heavily object-oriented. It follows a prototype-based model (as opposed to class-based).
+// Summary
 
-// Objects - Object, property, and method
-/* 
-    01. Object Literal
-    02. Object.create()
-    03. Functions are Objects in JavaScript 
-    04. Using Classes
-*/
-
-// Polymorphism (Method Overriding)
-// Inheritance is a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
-
-// Creating Parent Class
-/* class Person {
-    constructor(name, designation) {
-        this.name = name;
-        this.designation = designation;
-    }
-    learn() {
-        console.log('Learning!');
-    }
-    eat() {
-        console.log('Eating!');
-    }
-    sleep() {
-        console.log('Sleeping!');
-    }
-}
-
-// Extending Parent Class to Child Class
-class Developer extends Person {
-    constructor(name, designation, company) {
-        super(name, designation);
-        this.company = company;
-    }
-    coding() {
-        console.log('JavaScript Coding!');
-    }
-    learning() {
-        console.log('Learning JavaScript!');
-    }
-
-}
-
-// Extending Parent Class to one more Child Class
-class Dancer extends Person {
-    constructor(name, designation, school) {
-        super(name, designation);
-        this.school = school;
-    }
-    coding() {
-        console.log('JavaScript Coding!');
-    }
-    learning() {
-        console.log('Learning Bharatha Natyam!');
-    }
-}
-
-// Creating/Installing objects by using class
-let person = new Person('Anji', 'Socialist', 'Home');
-console.log(person);
-
-let renu = new Developer('Renuka', 'UI', 'innCompany');
-console.log(renu);
-
-let hindu = new Dancer('Hindu', 'Dancer', 'Dance School');
-console.log(hindu);
-
-
-// Getting/Setting the properties and actions with created object.
-// person.learning();
-renu.learning();
-hindu.learning();
-*/
-
-
-// Function Overloading in JavaScript
-
-function myFun() {
-    return 10;
-}
-function myFun(name) {
-    return name;
-}
-
-function myFun(name, company) {
-    return name + ' ' + company;
-}
-
-// let result = myFun()// undefined undefined
-let result = myFun('Renu', 'innCompany')// Renu innCompany
-console.log(result);
-
-/* 
-01. Can you give an example for polymorphism in React? 
-Any react component should have render() method, which will be overridden.
-
-02. Is setState() method inherited from React.Component class?
-Yes.
-
-03. JavaScript has method overloading functionality, Yes or No and Why? 
-No, It has only overriding functionality. 
-In a language like java, for instance, the compiler will check the number and types of parameters passed to a function and match it with the function signature. 
-In JavaScript however, type checking of parameters doesn't happen at compile time. In fact, the parameters won't be type checked even at run time unless they are actually used, and even then the mention to hecking is extremely relaxed.
- */
-
-
-
+1. Objects means simply real world entities such as mobile, laptop, bike, car, cat etc., 
+2. Class is a blueprint for creating objects. We can create objects in different ways in JavaScript by using functions, object literals etc., 
+3. Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
+4. Abstraction is the method that "shows" only essential attributes and "hides" unnecessary information. 
+5. Inheritance is a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods. 
+6. Polymorphism means having many forms. 
+7. JavaScript supports only overriding functionality because there is no type checking functionality.
